@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Nasa</title>
+</head>
+<body>
+    <img src="img/header.png" alt="background image" class="divider">
+    <main class="mainContainer">
+        <header>
+            <div class="headerContent">
+                <div class="logoHolder">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                    <h1>Nasa Mars Rovers</h1>
+                </div>
+                    <div class="toggle">
+                        <label class="switchBtn" >
+                            <input type="checkbox" id="switchBtn">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+            </div>
+        </header>
+        <div class="inputContainer">
+            <div class="textHolder">
+                <h2>Choose your space name 🚀</h2>
+                <p>Space Name (must be 3 characters)</p>
+            </div>
+            <form autocomplete="off" class="inputField">
+                    <label for="inputText">Skriv in ditt namn här</label>
+                    <input class="textInput" id="inputText" type="text">
+                    <button id="btnSubmit" type="submit" disabled>Skicka</button>
+            </form>
+        </div>
+        <div class="nameField">
+            <h2>Welcome</h2> 
+            <h2 id="aliasName"></h2>
+        </div>
+        <section class="cards"></section>
+    </main>
+    <img src="img/footer.png" alt="background image" class="footerDivider">
+    <script src="script.js"></script>
+</body>
+</html>
